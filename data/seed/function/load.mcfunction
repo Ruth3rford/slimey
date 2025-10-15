@@ -25,6 +25,4 @@ function seed:numbers with storage seed:main
 setblock 0 0 0 air
 setblock 0 0 0 command_block{Command:"seed",auto:1b,TrackOutput:1b}
 data modify storage seed:main seed set string block 0 0 0 LastOutput.extra[0].with[0].with[0].click_event.value
-function seed:seed/split with storage seed:main
-
-data merge storage seed:output {set_seed:[0,0],next_int:[0,0]}
+function seed:split with storage seed:main
