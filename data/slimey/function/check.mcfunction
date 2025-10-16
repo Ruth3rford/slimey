@@ -1,0 +1,1 @@
+execute summon minecraft:text_display run function slimey:set_seed
