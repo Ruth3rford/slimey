@@ -21,5 +21,5 @@ data merge storage slimey:main {power2:0,slimey:""}
 scoreboard players set $temp slimey.data 1
 function slimey:init/numbers with storage slimey:main
 forceload add 0 0 0 0
-setblock 0 0 0 command_block{Command:"seed",auto:1b,TrackOutput:1b} destroy
+setblock 0 -64 0 command_block{Command:"seed",auto:1b,TrackOutput:1b} destroy
 schedule function slimey:init/get_seed 2t replace
