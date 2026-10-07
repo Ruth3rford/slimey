@@ -1,0 +1,107 @@
+{
+    "type": "add",
+    "inputs": [
+        {
+            "type": "mul",
+            "inputs": [
+                {
+                    "type": "add",
+                    "inputs": [
+                        {
+                            "type": "floor_mod",
+                            "left": {
+                                "type": "add",
+                                "inputs": [
+                                    {
+                                        "type": "mul",
+                                        "inputs": [
+                                            67,
+                                            {
+                                                "type": "floor_mod",
+                                                "left": {
+                                                    "type": "score",
+                                                    "score": "slimey.data",
+                                                    "target": {
+                                                        "type": "fixed",
+                                                        "name": "$N"
+                                                    }
+                                                },
+                                                "right": 65536
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "mul",
+                                        "inputs": [
+                                            1959,
+                                            {
+                                                "type": "floor_div",
+                                                "left": {
+                                                    "type": "score",
+                                                    "score": "slimey.data",
+                                                    "target": {
+                                                        "type": "fixed",
+                                                        "name": "$N"
+                                                    }
+                                                },
+                                                "right": 65536
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "type": "floor_div",
+                                        "left": {
+                                            "type": "mul",
+                                            "inputs": [
+                                                1959,
+                                                {
+                                                    "type": "floor_mod",
+                                                    "left": {
+                                                        "type": "score",
+                                                        "score": "slimey.data",
+                                                        "target": {
+                                                            "type": "fixed",
+                                                            "name": "$N"
+                                                        }
+                                                    },
+                                                    "right": 65536
+                                                }
+                                            ]
+                                        },
+                                        "right": 65536
+                                    },
+                                    32768
+                                ]
+                            },
+                            "right": 65536
+                        },
+                        -32768
+                    ]
+                },
+                65536
+            ]
+        },
+        {
+            "type": "floor_mod",
+            "left": {
+                "type": "mul",
+                "inputs": [
+                    1959,
+                    {
+                        "type": "floor_mod",
+                        "left": {
+                            "type": "score",
+                            "score": "slimey.data",
+                            "target": {
+                                "type": "fixed",
+                                "name": "$N"
+                            }
+                        },
+                        "right": 65536
+                    }
+                ]
+            },
+            "right": 65536
+        }
+    ]
+}
