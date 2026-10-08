@@ -1,0 +1,230 @@
+{
+  "type": "add",
+  "inputs": [
+    {
+      "type": "mul",
+      "inputs": [
+        {
+          "type": "add",
+          "inputs": [
+            {
+              "type": "floor_mod",
+              "left": {
+                "type": "add",
+                "inputs": [
+                  {
+                    "type": "add",
+                    "inputs": [
+                      {
+                        "type": "floor_div",
+                        "left": {
+                          "type": "score",
+                          "score": "slimey.data",
+                          "target": {
+                            "type": "fixed",
+                            "name": "$seed.lo"
+                          }
+                        },
+                        "right": 65536
+                      },
+                      {
+                        "type": "floor_div",
+                        "left": {
+                          "type": "score",
+                          "score": "slimey.data",
+                          "target": {
+                            "type": "fixed",
+                            "name": "$val.A"
+                          }
+                        },
+                        "right": 65536
+                      },
+                      {
+                        "type": "floor_div",
+                        "left": {
+                          "type": "score",
+                          "score": "slimey.data",
+                          "target": {
+                            "type": "fixed",
+                            "name": "$val.B"
+                          }
+                        },
+                        "right": 65536
+                      },
+                      {
+                        "type": "floor_div",
+                        "left": {
+                          "type": "score",
+                          "score": "slimey.data",
+                          "target": {
+                            "type": "fixed",
+                            "name": "$val.C"
+                          }
+                        },
+                        "right": 65536
+                      },
+                      {
+                        "type": "floor_div",
+                        "left": {
+                          "type": "score",
+                          "score": "slimey.data",
+                          "target": {
+                            "type": "fixed",
+                            "name": "$val.D_lo"
+                          }
+                        },
+                        "right": 65536
+                      },
+                      {
+                        "type": "floor_div",
+                        "left": {
+                          "type": "add",
+                          "inputs": [
+                            {
+                              "type": "floor_mod",
+                              "left": {
+                                "type": "score",
+                                "score": "slimey.data",
+                                "target": {
+                                  "type": "fixed",
+                                  "name": "$seed.lo"
+                                }
+                              },
+                              "right": 65536
+                            },
+                            {
+                              "type": "floor_mod",
+                              "left": {
+                                "type": "score",
+                                "score": "slimey.data",
+                                "target": {
+                                  "type": "fixed",
+                                  "name": "$val.A"
+                                }
+                              },
+                              "right": 65536
+                            },
+                            {
+                              "type": "floor_mod",
+                              "left": {
+                                "type": "score",
+                                "score": "slimey.data",
+                                "target": {
+                                  "type": "fixed",
+                                  "name": "$val.B"
+                                }
+                              },
+                              "right": 65536
+                            },
+                            {
+                              "type": "floor_mod",
+                              "left": {
+                                "type": "score",
+                                "score": "slimey.data",
+                                "target": {
+                                  "type": "fixed",
+                                  "name": "$val.C"
+                                }
+                              },
+                              "right": 65536
+                            },
+                            {
+                              "type": "floor_mod",
+                              "left": {
+                                "type": "score",
+                                "score": "slimey.data",
+                                "target": {
+                                  "type": "fixed",
+                                  "name": "$val.D_lo"
+                                }
+                              },
+                              "right": 65536
+                            }
+                          ]
+                        },
+                        "right": 65536
+                      }
+                    ]
+                  },
+                  32768
+                ]
+              },
+              "right": 65536
+            },
+            -32768
+          ]
+        },
+        65536
+      ]
+    },
+    {
+      "type": "floor_mod",
+      "left": {
+        "type": "add",
+        "inputs": [
+          {
+            "type": "floor_mod",
+            "left": {
+              "type": "score",
+              "score": "slimey.data",
+              "target": {
+                "type": "fixed",
+                "name": "$seed.lo"
+              }
+            },
+            "right": 65536
+          },
+          {
+            "type": "floor_mod",
+            "left": {
+              "type": "score",
+              "score": "slimey.data",
+              "target": {
+                "type": "fixed",
+                "name": "$val.A"
+              }
+            },
+            "right": 65536
+          },
+          {
+            "type": "floor_mod",
+            "left": {
+              "type": "score",
+              "score": "slimey.data",
+              "target": {
+                "type": "fixed",
+                "name": "$val.B"
+              }
+            },
+            "right": 65536
+          },
+          {
+            "type": "floor_mod",
+            "left": {
+              "type": "score",
+              "score": "slimey.data",
+              "target": {
+                "type": "fixed",
+                "name": "$val.C"
+              }
+            },
+            "right": 65536
+          },
+          {
+            "type": "floor_mod",
+            "left": {
+              "type": "score",
+              "score": "slimey.data",
+              "target": {
+                "type": "fixed",
+                "name": "$val.D_lo"
+              }
+            },
+            "right": 65536
+          }
+        ]
+      },
+      "right": 65536
+    }
+  ]
+}

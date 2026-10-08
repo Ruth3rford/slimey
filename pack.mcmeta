@@ -1,6 +1,7 @@
 {
   "pack": {
     "description": "Slimey",
-    "pack_format": 80
+    "min_format": 121,
+    "max_format": 121
   }
 }

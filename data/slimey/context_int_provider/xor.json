@@ -1,0 +1,2829 @@
+{
+  "type": "add",
+  "inputs": [
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 1
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 1
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 1
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 1
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 1,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 2
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 2
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 2
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 2
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 2,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 4
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 4
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 4
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 4
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 4,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 8
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 8
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 8
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 8
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 8,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 16
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 16
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 16
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 16
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 16,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 32
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 32
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 32
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 32
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 32,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 64
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 64
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 64
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 64
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 64,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 128
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 128
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 128
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 128
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 128,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 256
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 256
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 256
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 256
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 256,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 512
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 512
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 512
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 512
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 512,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 1024
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 1024
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 1024
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 1024
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 1024,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 2048
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 2048
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 2048
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 2048
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 2048,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 4096
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 4096
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 4096
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 4096
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 4096,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 8192
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 8192
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 8192
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 8192
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 8192,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 16384
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 16384
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 16384
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 16384
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 16384,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 32768
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 32768
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 32768
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 32768
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 32768,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 65536
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 65536
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 65536
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 65536
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 65536,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 131072
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 131072
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 131072
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 131072
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 131072,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 262144
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 262144
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 262144
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 262144
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 262144,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 524288
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 524288
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 524288
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 524288
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 524288,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 1048576
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 1048576
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 1048576
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 1048576
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 1048576,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 2097152
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 2097152
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 2097152
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 2097152
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 2097152,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 4194304
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 4194304
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 4194304
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 4194304
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 4194304,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 8388608
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 8388608
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 8388608
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 8388608
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 8388608,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 16777216
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 16777216
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 16777216
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 16777216
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 16777216,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 33554432
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 33554432
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 33554432
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 33554432
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 33554432,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 67108864
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 67108864
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 67108864
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 67108864
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 67108864,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 134217728
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 134217728
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 134217728
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 134217728
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 134217728,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 268435456
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 268435456
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 268435456
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 268435456
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 268435456,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 536870912
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 536870912
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 536870912
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 536870912
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 536870912,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": {
+                        "type": "score",
+                        "score": "slimey.data",
+                        "target": {
+                          "type": "fixed",
+                          "name": "$A"
+                        }
+                      },
+                      "right": 1073741824
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                },
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "floor_mod",
+                    "left": {
+                      "type": "minecraft:floor_div",
+                      "left": 987234911,
+                      "right": 1073741824
+                    },
+                    "right": 2
+                  },
+                  "test": 1
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": {
+                      "type": "score",
+                      "score": "slimey.data",
+                      "target": {
+                        "type": "fixed",
+                        "name": "$A"
+                      }
+                    },
+                    "right": 1073741824
+                  },
+                  "right": 2
+                },
+                "test": 1
+              },
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "floor_mod",
+                  "left": {
+                    "type": "minecraft:floor_div",
+                    "left": 987234911,
+                    "right": 1073741824
+                  },
+                  "right": 2
+                },
+                "test": 1
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": 1073741824,
+      "on_false": 0
+    },
+    {
+      "type": "conditional",
+      "condition": {
+        "type": "all_of",
+        "terms": [
+          {
+            "type": "inverted",
+            "term": {
+              "type": "all_of",
+              "terms": [
+                {
+                  "type": "int_value_check",
+                  "value": {
+                    "type": "score",
+                    "score": "slimey.data",
+                    "target": {
+                      "type": "fixed",
+                      "name": "$A"
+                    }
+                  },
+                  "test": {
+                    "max": -1
+                  }
+                },
+                {
+                  "type": "int_value_check",
+                  "value": 987234911,
+                  "test": {
+                    "max": -1
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "type": "any_of",
+            "terms": [
+              {
+                "type": "int_value_check",
+                "value": {
+                  "type": "score",
+                  "score": "slimey.data",
+                  "target": {
+                    "type": "fixed",
+                    "name": "$A"
+                  }
+                },
+                "test": {
+                  "max": -1
+                }
+              },
+              {
+                "type": "int_value_check",
+                "value": 987234911,
+                "test": {
+                  "max": -1
+                }
+              }
+            ]
+          }
+        ]
+      },
+      "on_true": -2147483648,
+      "on_false": 0
+    }
+  ]
+}

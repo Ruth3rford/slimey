@@ -1,0 +1,1 @@
+$setblock 0 -64 0 barrel{LootTable:"slimey:next_int10",LootTableSeed:$(seed_text)L} replace

@@ -1,5 +1,5 @@
 {
 	"values": [
-		"slimey:load"
+		"slimey:init/load"
 	]
 }

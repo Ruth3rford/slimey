@@ -23,7 +23,7 @@
                                                     "score": "slimey.data",
                                                     "target": {
                                                         "type": "fixed",
-                                                        "name": "$N"
+                                                        "name": "$Z.pos"
                                                     }
                                                 },
                                                 "right": 65536
@@ -41,7 +41,7 @@
                                                     "score": "slimey.data",
                                                     "target": {
                                                         "type": "fixed",
-                                                        "name": "$N"
+                                                        "name": "$Z.pos"
                                                     }
                                                 },
                                                 "right": 65536
@@ -61,7 +61,7 @@
                                                         "score": "slimey.data",
                                                         "target": {
                                                             "type": "fixed",
-                                                            "name": "$N"
+                                                            "name": "$Z.pos"
                                                         }
                                                     },
                                                     "right": 65536
@@ -94,7 +94,7 @@
                             "score": "slimey.data",
                             "target": {
                                 "type": "fixed",
-                                "name": "$N"
+                                "name": "$Z.pos"
                             }
                         },
                         "right": 65536

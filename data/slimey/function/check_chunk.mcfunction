@@ -22,114 +22,30 @@ scoreboard players operation $val.C slimey.data *= #389711 slimey.data
 scoreboard players operation $Z.pos slimey.data *= $Z.pos slimey.data
 
 #Z*Z*0x4307a7 long split into hi and lo
-scoreboard players operation $N slimey.data = $Z.pos slimey.data
 execute store result score $val.D_lo slimey.data run compute default integer slimey:d_lo
 execute store result score $val.D_hi slimey.data run compute default integer slimey:d_hi
 ###
 
-scoreboard players operation $A slimey.data = $seed.lo slimey.data
-
-#seed + valA
-scoreboard players operation $B slimey.data = $val.A slimey.data
-execute store result score $seed.hi slimey.data run compute default integer slimey:carry
-execute store result score $A slimey.data run compute default integer slimey:add
-
-#+ valB
-scoreboard players operation $B slimey.data = $val.B slimey.data
-execute store result score $seed.hi slimey.data run compute default integer slimey:carry
-execute store result score $A slimey.data run compute default integer slimey:add
-
-#+ valC
-scoreboard players operation $B slimey.data = $val.C slimey.data
-execute store result score $seed.hi slimey.data run compute default integer slimey:carry
-execute store result score $A slimey.data run compute default integer slimey:add
-
-#+ valD
-scoreboard players operation $B slimey.data = $val.D_lo slimey.data
-execute store result score $seed.hi slimey.data run compute default integer slimey:carry
-
-# D has its own high part, so cancel carry's sign extension of B
-execute if score $B slimey.data matches ..-1 run scoreboard players add $seed.hi slimey.data 1
-
-execute store result score $A slimey.data run compute default integer slimey:add
-scoreboard players operation $seed.hi slimey.data += $val.D_hi slimey.data
-scoreboard players operation $seed.hi slimey.data %= #65536 slimey.data
+### seed + sum
+execute store result score $seed.hi slimey.data run compute default integer slimey:seed_sum_hi
+execute store result score $A slimey.data run compute default integer slimey:seed_sum_lo
 
 ### XOR STEP
-scoreboard players operation $seed.lo slimey.data = $A slimey.data
-scoreboard players set $B slimey.data 987234911
-scoreboard players operation $seed.lo slimey.data += $B slimey.data
-execute store result score $AND slimey.data run compute default integer slimey:and
-scoreboard players operation $seed.lo slimey.data -= $AND slimey.data
-scoreboard players operation $seed.lo slimey.data -= $AND slimey.data
+execute store result score $seed.lo slimey.data run compute default integer slimey:xor
 
 #convert to strings and concatenate as a seed for nextInt()
 
-scoreboard players operation $a slimey.data = $seed.hi slimey.data
 execute store result score $b slimey.data run compute default integer {type:floor_mod,left:{type:floor_div,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$seed.lo"}},right:65536},right:65536}
 execute store result score $c slimey.data run compute default integer {type:floor_mod,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$seed.lo"}},right:65536}
 
-#1
+execute store result score $U slimey.data run compute default integer {type:add,inputs:[{type:mul,inputs:[{type:score,score:"slimey.data",target:{type:fixed,name:"$seed.hi"}},7296]},{type:mul,inputs:[{type:score,score:"slimey.data",target:{type:fixed,name:"$b"}},5536]},{type:score,score:"slimey.data",target:{type:fixed,name:"$c"}}]}
+execute store result score $V slimey.data run compute default integer {type:add,inputs:[{type:mul,inputs:[{type:score,score:"slimey.data",target:{type:fixed,name:"$seed.hi"}},9496]},{type:mul,inputs:[{type:score,score:"slimey.data",target:{type:fixed,name:"$b"}},6]},{type:"floor_div",left:{type:score,score:"slimey.data",target:{type:fixed,name:"$U"}},right:10000}]}
+execute store result score $W slimey.data run compute default integer {type:add,inputs:[{type:mul,inputs:[{type:score,score:"slimey.data",target:{type:fixed,name:"$seed.hi"}},42]},{type:"floor_div",left:{type:score,score:"slimey.data",target:{type:fixed,name:"$V"}},right:10000}]}
 
-execute store result score $remainder slimey.data run compute default integer {type:floor_mod,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$a"}},right:10000}
-execute store result score $a slimey.data run compute default integer {type:floor_div,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$a"}},right:10000}
+data modify storage slimey:main d0 set compute default integer {type:"floor_mod",left:{type:score,score:"slimey.data",target:{type:fixed,name:"$U"}},right:10000}
+data modify storage slimey:main d1 set compute default integer {type:"floor_mod",left:{type:score,score:"slimey.data",target:{type:fixed,name:"$V"}},right:10000}
+data modify storage slimey:main d2 set compute default integer {type:"floor_mod",left:{type:score,score:"slimey.data",target:{type:fixed,name:"$W"}},right:10000}
+data modify storage slimey:main d3 set compute default integer {type:"floor_div",left:{type:score,score:"slimey.data",target:{type:fixed,name:"$W"}},right:10000}
+function slimey:nextint/nextint with storage slimey:main
 
-execute store result score $t slimey.data run compute default integer {type:add,inputs:[{type:mul,inputs:[{type:score,score:"slimey.data",target:{type:fixed,name:"$remainder"}},65536]},{type:score,score:"slimey.data",target:{type:fixed,name:"$b"}}]}
-execute store result score $b slimey.data run compute default integer {type:floor_div,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-execute store result score $remainder slimey.data run compute default integer {type:floor_mod,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-
-execute store result score $t slimey.data run compute default integer {type:add,inputs:[{type:mul,inputs:[{type:score,score:"slimey.data",target:{type:fixed,name:"$remainder"}},65536]},{type:score,score:"slimey.data",target:{type:fixed,name:"$c"}}]}
-execute store result score $c slimey.data run compute default integer {type:floor_div,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-
-data modify storage slimey:main chunk set compute default integer {type:floor_mod,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-function slimey:limb with storage slimey:main
-data modify storage slimey:main d0 set from storage slimey:main padded
-
-#2
-
-execute store result score $remainder slimey.data run compute default integer {type:floor_mod,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$a"}},right:10000}
-execute store result score $a slimey.data run compute default integer {type:floor_div,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$a"}},right:10000}
-
-execute store result score $t slimey.data run compute default integer {type:add,inputs:[{type:mul,inputs:[{type:score,score:"slimey.data",target:{type:fixed,name:"$remainder"}},65536]},{type:score,score:"slimey.data",target:{type:fixed,name:"$b"}}]}
-execute store result score $b slimey.data run compute default integer {type:floor_div,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-execute store result score $remainder slimey.data run compute default integer {type:floor_mod,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-
-execute store result score $t slimey.data run compute default integer {type:add,inputs:[{type:mul,inputs:[{type:score,score:"slimey.data",target:{type:fixed,name:"$remainder"}},65536]},{type:score,score:"slimey.data",target:{type:fixed,name:"$c"}}]}
-execute store result score $c slimey.data run compute default integer {type:floor_div,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-
-data modify storage slimey:main chunk set compute default integer {type:floor_mod,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-function slimey:limb with storage slimey:main
-data modify storage slimey:main d1 set from storage slimey:main padded
-
-#3
-
-execute store result score $remainder slimey.data run compute default integer {type:floor_mod,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$a"}},right:10000}
-execute store result score $a slimey.data run compute default integer {type:floor_div,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$a"}},right:10000}
-
-execute store result score $t slimey.data run compute default integer {type:add,inputs:[{type:mul,inputs:[{type:score,score:"slimey.data",target:{type:fixed,name:"$remainder"}},65536]},{type:score,score:"slimey.data",target:{type:fixed,name:"$b"}}]}
-execute store result score $b slimey.data run compute default integer {type:floor_div,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-execute store result score $remainder slimey.data run compute default integer {type:floor_mod,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-
-execute store result score $t slimey.data run compute default integer {type:add,inputs:[{type:mul,inputs:[{type:score,score:"slimey.data",target:{type:fixed,name:"$remainder"}},65536]},{type:score,score:"slimey.data",target:{type:fixed,name:"$c"}}]}
-execute store result score $c slimey.data run compute default integer {type:floor_div,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-
-data modify storage slimey:main chunk set compute default integer {type:floor_mod,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-function slimey:limb with storage slimey:main
-data modify storage slimey:main d2 set from storage slimey:main padded
-
-#4
-
-execute store result score $remainder slimey.data run compute default integer {type:floor_mod,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$a"}},right:10000}
-execute store result score $a slimey.data run compute default integer {type:floor_div,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$a"}},right:10000}
-
-execute store result score $t slimey.data run compute default integer {type:add,inputs:[{type:mul,inputs:[{type:score,score:"slimey.data",target:{type:fixed,name:"$remainder"}},65536]},{type:score,score:"slimey.data",target:{type:fixed,name:"$b"}}]}
-execute store result score $b slimey.data run compute default integer {type:floor_div,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-execute store result score $remainder slimey.data run compute default integer {type:floor_mod,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-
-execute store result score $t slimey.data run compute default integer {type:add,inputs:[{type:mul,inputs:[{type:score,score:"slimey.data",target:{type:fixed,name:"$remainder"}},65536]},{type:score,score:"slimey.data",target:{type:fixed,name:"$c"}}]}
-execute store result score $c slimey.data run compute default integer {type:floor_div,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-
-data modify storage slimey:main chunk set compute default integer {type:floor_mod,left:{type:score,score:"slimey.data",target:{type:fixed,name:"$t"}},right:10000}
-data modify storage slimey:main d3 set string storage slimey:main chunk
-function slimey:nextint with storage slimey:main
 execute if score $is_slime_chunk slimey.data matches 1 run return 1
